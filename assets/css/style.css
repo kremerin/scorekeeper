@@ -56,20 +56,16 @@ body {
 }
 
 .team1 {
-    border: 3px solid #97F5BB;
-    border-radius: 20px;
     padding: 3rem;
-    position: relative;
 }
 
 .team2 {
-    border: 3px solid #525DF4;
-    border-radius: 20px;
     padding: 3rem;
-    position: relative;
 }
 
 .score {
+    position: relative;
+    border-radius: 20px;
     background-color: #000;
     height: 200px;
     width: 200px;
@@ -77,6 +73,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.team1 .score {
+    border: 3px solid #97F5BB;
+}
+
+.team2 .score {
+    border: 3px solid #525DF4;
 }
 
 .score span {
@@ -88,7 +92,7 @@ body {
 #teamName1 {
     position: absolute;
     bottom: -15px;
-    background-color: #2C2C2C;
+    background-image: linear-gradient(#000, #2C2C2C);
     padding: 0 15px;
     color: #fff;
 }
@@ -96,7 +100,7 @@ body {
 #teamName2 {
     position: absolute;
     bottom: -15px;
-    background-color: #2C2C2C;
+    background-image: linear-gradient(#000, #2C2C2C);
     padding: 0 15px;
     color: #fff;
 }
@@ -130,5 +134,3 @@ body {
     color: #000;
     padding: 0.5rem 1.5rem;
 }
-
-/*#2C2C2C, #FDF860, #000000, #FFFFFF, #97F5BB, #525DF4*/
