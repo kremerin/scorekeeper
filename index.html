@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <title>Scorekeeper</title>
+</head>
+<body>
+    <main>
+        <section class="team1">
+            <article class="score">
+                <span id="score1">0</span>
+                <h2 id="teamName1" onclick="changeHomeName">Home</h2>
+            </article>
+            <article class="buttons">
+                <button id="button1" class="btn" onclick="countHome1()">
+                    <span>+1</span>
+                </button>
+                <button id="button2" class="btn" onclick="countHome2()">
+                    <span>+2</span>
+                </button>
+                <button id="button3" class="btn" onclick="countHome3()">
+                    <span>+3</span>
+                </button>
+            </article>
+        </section>
+        <section class="team2">
+            <article class="score">
+                <span id="score2">0</span>
+                <h2 id="teamName2">Guest</h2>
+            </article>
+            <article class="buttons">
+                <button id="button4" class="btn" onclick="countGuest1()">
+                    <span>+1</span>
+                </button>
+                <button id="button5" class="btn" onclick="countGuest2()">
+                    <span>+2</span>
+                </button>
+                <button id="button6" class="btn" onclick="countGuest3()">
+                    <span>+3</span>
+                </button>
+            </article>
+        </section>
+        <section class="reset">
+            <button id="reset" class="btn" onclick="resetCounter()">Reset</button>
+        </section>
+    </main>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
